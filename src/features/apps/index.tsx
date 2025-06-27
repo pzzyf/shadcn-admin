@@ -114,12 +114,12 @@ export default function Apps() {
         <ul className='faded-bottom no-scrollbar grid gap-4 overflow-auto pt-4 pb-16 md:grid-cols-2 lg:grid-cols-3'>
           {filteredApps.map((app) => (
             <li
-              key={app.name}
-              className='rounded-lg border p-4 hover:shadow-md'
+            className='rounded-lg border p-4 box-border hover:shadow-md'
+            key={app.name}
             >
               <div className='mb-8 flex items-center justify-between'>
                 <div
-                  className={`bg-muted flex size-10 items-center justify-center rounded-lg p-2`}
+                  className={`bg-muted flex size-10 justify-center rounded-lg p-2`}
                 >
                   {app.logo}
                 </div>
